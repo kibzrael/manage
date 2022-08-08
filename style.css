@@ -301,14 +301,14 @@ header {
 #cover::before {
   z-index: -1;
   position: absolute;
-  content: url("images/bg-tablet-pattern.svg");
+  content: url("/images/bg-tablet-pattern.svg");
   right: -10rem;
   top: -10rem;
 }
 
 @media (max-width: 50em) {
   #cover::before {
-    content: url("images/bg-tablet-pattern-sm.svg");
+    content: url("/images/bg-tablet-pattern-sm.svg");
     right: -5rem;
     top: -5rem;
   }
@@ -381,14 +381,14 @@ header {
 #benefits::before {
   z-index: -1;
   position: absolute;
-  content: url("images/bg-tablet-pattern.svg");
+  content: url("/images/bg-tablet-pattern.svg");
   left: -30%;
   top: 20rem;
 }
 
 @media (max-width: 50rem) {
   #benefits::before {
-    content: url("images/bg-tablet-pattern-sm.svg");
+    content: url("/images/bg-tablet-pattern-sm.svg");
     left: 60vw;
     top: -50vh;
   }
@@ -516,7 +516,7 @@ header {
   padding-bottom: 4rem;
   gap: 2rem;
   background-color: var(--primary);
-  background-image: url("images/bg-simplify-section-desktop.svg");
+  background-image: url("/images/bg-simplify-section-desktop.svg");
   background-repeat: no-repeat;
 }
 
@@ -527,7 +527,7 @@ header {
 
 @media (max-width: 50rem) {
   #promotion {
-    background-image: url("images/bg-simplify-section-mobile.svg");
+    background-image: url("/images/bg-simplify-section-mobile.svg");
   }
 
   .carousel {
