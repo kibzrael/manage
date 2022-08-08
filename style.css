@@ -298,19 +298,25 @@ header {
   }
 }
 
+#cover {
+  position: relative;
+  overflow-x: clip;
+}
+
 #cover::before {
   z-index: -1;
   position: absolute;
   content: url("/images/bg-tablet-pattern.svg");
   right: -10rem;
   top: -10rem;
+  overflow: hidden;
 }
 
 @media (max-width: 50em) {
   #cover::before {
     content: url("/images/bg-tablet-pattern-sm.svg");
-    right: -5rem;
-    top: -5rem;
+    right: -4.5rem;
+    top: -9rem;
   }
   .intro-illustration {
     max-width: 30em;
@@ -376,6 +382,7 @@ header {
 
 #benefits {
   position: relative;
+  overflow-x: clip;
 }
 
 #benefits::before {
