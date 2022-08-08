@@ -11,12 +11,12 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Manage landing page</title>
-    <script type="module" src="main.js" defer></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
       <img id="primary-logo" src="images/logo.svg" alt="Manage logo" />
-      <nav id="primary-nav">
+      <nav id="primary-nav" class="sm-hidden">
         <ul>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Product</a></li>
@@ -26,7 +26,20 @@
         </ul>
       </nav>
       <button class="button">Get Started</button>
-      <img src="images/icon-hamburger.svg" alt="Menu" class="menu" />
+      <button id="menu-button" aria-controls="primary-nav">
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Menu"
+          class="menu"
+          id="icon-hamburger"
+        />
+        <img
+          src="images/icon-close.svg"
+          alt="Close"
+          class="close sm-hidden"
+          id="icon-close"
+        />
+      </button>
     </header>
     <main>
       <section class="cover | grid-columns reverse">
@@ -46,7 +59,7 @@
           alt="Intro Illustration"
         />
       </section>
-      <section class="columns">
+      <section id="benefits" class="columns">
         <div>
           <h2 class="title-md">What’s different about Manage?</h2>
           <p class="body-text">
@@ -82,13 +95,13 @@
           </li>
         </ol>
       </section>
-      <section>
-        <h2>What they’ve said</h2>
+      <section id="quotes">
+        <h2 class="title-md">What they’ve said</h2>
         <div class="carousel">
           <div id="item-1" class="carousel-item">
             <img src="images/avatar-anisha.png" alt="Anisha's Avatar" />
-            <h4>Anisha Li</h4>
-            <p>
+            <h4 class="title-sm">Anisha Li</h4>
+            <p class="body-text">
               “Manage has supercharged our team’s workflow. The ability to
               maintain visibility on larger milestones at all times keeps
               everyone motivated.”
@@ -96,8 +109,8 @@
           </div>
           <div id="item-2" class="carousel-item">
             <img src="images/avatar-ali.png" alt="Ali's Avatar" />
-            <h4>Ali Bravo</h4>
-            <p>
+            <h4 class="title-sm">Ali Bravo</h4>
+            <p class="body-text">
               “We have been able to cancel so many other subscriptions since
               using Manage. There is no more cross-channel confusion and
               everyone is much more focused.”
@@ -105,8 +118,8 @@
           </div>
           <div id="item-3" class="carousel-item">
             <img src="images/avatar-richard.png" alt="Richard's Avatar" />
-            <h4>Richard Watts</h4>
-            <p>
+            <h4 class="title-sm">Richard Watts</h4>
+            <p class="body-text">
               “Manage allows us to provide structure and process. It keeps us
               organized and focused. I can’t stop recommending them to everyone
               I talk to!”
@@ -114,8 +127,8 @@
           </div>
           <div id="item-4" class="carousel-item">
             <img src="images/avatar-shanai.png" alt="Shanai's Avatar" />
-            <h4>Shanai Gough</h4>
-            <p>
+            <h4 class="title-sm">Shanai Gough</h4>
+            <p class="body-text">
               “Their software allows us to track, manage and collaborate on our
               projects from anywhere. It keeps the whole team in-sync without
               being intrusive.”
@@ -123,22 +136,24 @@
           </div>
         </div>
         <ol class="carousel-indicators">
-          <li><a href="#item-1"></a></li>
-          <li><a href="#item-2"></a></li>
-          <li><a href="#item-3"></a></li>
-          <li><a href="#item-4"></a></li>
+          <li class="carousel-indicator active"></li>
+          <li class="carousel-indicator"></li>
+          <li class="carousel-indicator"></li>
+          <li class="carousel-indicator"></li>
         </ol>
         <button class="button">Get Started</button>
       </section>
-      <section class="columns">
-        <h2 class="flex-expand">Simplify how your team works today.</h2>
+      <section id="promotion" class="columns">
+        <h2 class="flex-expand title-md">
+          Simplify how your team works today.
+        </h2>
         <button class="button">Get Started</button>
       </section>
     </main>
-    <footer class="columns reverse">
-      <div class="reverse">
-        <img src="images/logo.svg" alt="Manage Logo" />
-        <div>
+    <footer id="footer" class="columns reverse">
+      <div class="footer-links reverse">
+        <img src="images/logo light.svg" alt="Manage Logo" />
+        <div class="social-links">
           <img src="images/icon-facebook.svg" alt="Facebook" />
           <img src="images/icon-youtube.svg" alt="Youtube" />
           <img src="images/icon-twitter.svg" alt="Twitter" />
@@ -146,31 +161,23 @@
           <img src="images/icon-instagram.svg" alt="Instagram" />
         </div>
       </div>
-      <nav>
+      <nav class="flow1">
         <ul>
           <li><a href="#">Home</a></li>
-        </ul>
-        <ul>
           <li><a href="#">Pricing</a></li>
-        </ul>
-        <ul>
           <li><a href="#">Products</a></li>
-        </ul>
-        <ul>
           <li><a href="#">About Us</a></li>
         </ul>
+      </nav>
+      <nav class="flow2">
         <ul>
           <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
           <li><a href="#">Community</a></li>
-        </ul>
-        <ul>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
       </nav>
-      <div>
-        <form action="" method="post">
+      <div class="updates-container">
+        <form class="updates" action="" method="post">
           <input
             type="email"
             name="email"
@@ -179,7 +186,7 @@
           />
           <button class="button" type="submit">Go</button>
         </form>
-        <p>Copyright 2020. All Rights Reserved</p>
+        <p class="copyright">Copyright 2020. All Rights Reserved</p>
       </div>
     </footer>
   </body>
