@@ -222,6 +222,10 @@ header {
   height: 7.5rem;
 }
 
+#primary-nav {
+  z-index: 2;
+}
+
 #primary-nav > ul {
   display: inline-flex;
   gap: 2vw;
