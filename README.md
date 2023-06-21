@@ -33,7 +33,7 @@ Mobile
 ### Links
 
 - Solution URL: [HERE](https://www.frontendmentor.io/solutions/responsive-layout-using-plain-css-PGAO1B-oxi)
-- Live Site URL: [https://manage.raelcode.tech](https://manage.raelcode.tech)
+- Live Site URL: [https://manage.raelcode.com](https://manage.raelcode.com)
 
 ## My process
 
